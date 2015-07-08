@@ -10,8 +10,6 @@
 #define NL80211_CHAN_WIDTH_5 (NL80211_CHAN_WIDTH_160+1)
 #define NL80211_CHAN_WIDTH_10 (NL80211_CHAN_WIDTH_5+1)
 
-
-
 int nl_leave_ocb(void);
 int nl_join_ocb(int channel, int width);
 int nl_set_channel(int channel, int width);

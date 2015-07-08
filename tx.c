@@ -18,6 +18,9 @@
 
 char* if_name = "wlan0";
 
+/* 
+ * Simple example sending packets with a sequence number in them
+ */
 int main (void)
 {
   int raw_socket = -1;

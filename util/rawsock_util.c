@@ -12,7 +12,7 @@
 #include "rawsock_util.h"
 
 /*
- * Opens a socket for raw communications
+ * Opens a socket for raw communications.  Packets are broadcast type
  */
 int open_socket(char *interface_name, int *raw_socket, struct sockaddr_ll *sockaddr)
 {
@@ -59,7 +59,8 @@ int open_socket(char *interface_name, int *raw_socket, struct sockaddr_ll *socka
 }
 
 /*
- * Populates a header with eth data for packet transmission
+ * Populates a header with eth data for packet transmission.
+ * This creates a header with a broadcast address.
  */
 void populate_eth_hdr(eth_hdr_t *hdr, unsigned char my_addr[], uint16_t ether_type)
 {

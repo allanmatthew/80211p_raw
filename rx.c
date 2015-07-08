@@ -20,7 +20,9 @@
 #define CHANNEL 3
 
 char* if_name = "wlan0";
-
+/*
+ * Simple example receiving packets with a sequence number in them
+ */
 int main (void)
 {
   int raw_socket = -1;
